@@ -91,12 +91,7 @@
             </tr>
 
           </table>
-
-
-          
-
-      <p><a href="index.php">Menu</a></p>                         
-        
+     
   	 </body>
      
 
