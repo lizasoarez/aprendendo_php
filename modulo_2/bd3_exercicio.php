@@ -35,7 +35,7 @@
 
 
            
-            echo "<ul><li>Código: $entrada1</li><li>Nome: $entrada2</li><li>Nota: $entrada3</li></ul>";
+            echo "<ul><li>Id: $entrada1</li><li>Nome: $entrada2</li><li>Nota: $entrada3</li></ul>";
             echo "<ul><li>Id: $entrada4</li><li>Nome: $entrada5</li><li>Nota: $entrada6</li></ul>";            
 
 
