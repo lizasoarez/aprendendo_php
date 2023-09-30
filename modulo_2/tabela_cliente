@@ -1,14 +1,14 @@
-/* exemplo de dados gerados no site https://generatedata.com/generator*/
-/* Essa tabela foi usa para o código do exercicio da aula 2 */
-/* copiar e colar no sql do seu banco teste para testar o código*/
+/* Exemplo de dados gerados no site https://generatedata.com/generator*/
+/* Essa tabela foi usada para o código do exercicio da aula 2 */
+/* Copiar e colar no sql do seu banco teste para testar o código*/
 
 CREATE TABLE `clientes` (
-  id_cliente int NOT NULL AUTO_INCREMENT,
-  `nome` varchar(100) NOT NULL,
-  `cidade` varchar(100) NOT NULL,
-  `pais` varchar(100) NOT NULL,
-  `telefone` varchar(100) NOT NULL,
-  PRIMARY KEY (id_cliente));
+  id_cliente INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(100) NOT NULL,
+  `cidade` VARCHAR(100) NOT NULL,
+  `pais` VARCHAR(100) NOT NULL,
+  `telefone` VARCHAR(100) NOT NULL,
+   PRIMARY KEY (id_cliente));
 
 
 INSERT INTO `clientes` (`nome`, `cidade`, `pais`, `telefone`) VALUES
