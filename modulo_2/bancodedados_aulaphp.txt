@@ -1,0 +1,2 @@
+CREATE DATABASE `aulaphp`;
+/*Este arquivo deve ser salvo em .sql ou copiado no sql do phpmyadmin*/

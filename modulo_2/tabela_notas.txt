@@ -1,0 +1,16 @@
+/*Este arquivo deve ser salvo em .sql ou copiado no sql do phpmyadmin*/
+
+CREATE TABLE `notas` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(200) NOT NULL,
+  `nota` int NOT NULL , 
+   PRIMARY KEY (`id`)
+) ;
+
+INSERT INTO `notas` (`nome`, `nota`) 
+VALUES('Rodrigo', 10),
+('Pedro', 9),
+('Maria', 8),
+('Joaquim', 7),
+('Roberto Carlos', 9),
+('Ana Maria', 6);
