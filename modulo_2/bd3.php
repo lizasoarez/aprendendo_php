@@ -12,11 +12,11 @@
 
     	<?php
 
-    	    $localhost = "localhost";
-    	    $user = "admin_user";
-    	    $password = "z_3JFP>243v?N";
-    	    $bd = "aulaphp";
-    	    $porta = 3307;
+    	    $host = "localhost";
+          $usuario = "usuario";
+          $senha = "senha";
+          $banco = "aulaphp";
+          $porta = 3307;
 
     	    $conexao = new PDO("mysql:host=$localhost;porta=$porta;dbname=$bd",$user,$password);
 
