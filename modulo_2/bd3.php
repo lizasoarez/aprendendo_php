@@ -12,20 +12,20 @@
 
     	    <?php
 
-    	    $host = "localhost";
+    	  $host = "localhost";
           $usuario = "usuario";
           $senha = "senha";
           $banco = "aulaphp";
           $porta = 3307;
 
-    	    $conexao = new PDO("mysql:host=$localhost;porta=$porta;dbname=$bd",$user,$password);
+    	  $conexao = new PDO("mysql:host=$localhost;porta=$porta;dbname=$bd",$user,$password);
 
 
-    	    $sql = "SELECT id_cliente,nome,cidade,pais,telefone FROM clientes";
+    	  $sql = "SELECT id_cliente,nome,cidade,pais,telefone FROM clientes";
 
-    	    $consulta = $conexao->prepare($sql);
-    	    $consulta->execute();
-    	    $resultados = $consulta->fetchall(PDO::FETCH_ASSOC);
+    	  $consulta = $conexao->prepare($sql);
+    	  $consulta->execute();
+    	  $resultados = $consulta->fetchall(PDO::FETCH_ASSOC);
 
 
             echo "<ul>";
