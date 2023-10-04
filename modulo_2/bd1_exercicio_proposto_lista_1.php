@@ -12,7 +12,7 @@
 
     	<?php
 
-    	  $host = "localhost";
+    	    $host = "localhost";
           $usuario = "usuario";
           $senha = "senha";
           $banco = "aulaphp";

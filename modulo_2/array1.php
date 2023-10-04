@@ -12,24 +12,24 @@
      	<?php 
 
               $array1 = [1,2,3,4,5];
-              print_r($array1);
+               print_r($array1);
                echo "<br><br>";
 
                echo"<p>---foreach array1----</p>";
 
               foreach ($array1 as $elemento) {
-              print_r($elemento);
+               print_r($elemento);
                echo "<br><br>";
                   
               }
 
               $array2 = ["ola","mundo","cruel"];
-              print_r($array2);
+               print_r($array2);
                echo "<br><br>";
 
                echo"<p>---foreach array2---</p>";
               foreach ($array2 as $elemento) {
-              print_r($elemento);
+               print_r($elemento);
                echo "<br><br>";
                   
               }
@@ -45,7 +45,7 @@
                echo"<p>---Print_r Cadastro---</p>";
                echo "<br>"; 
 
-              print_r($cadastro);
+               print_r($cadastro);
                echo "<br>";
                echo"<p>---foreach Cadastro---</p>";
 
