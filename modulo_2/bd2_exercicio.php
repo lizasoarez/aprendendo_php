@@ -13,15 +13,17 @@
 
         <!-- Este exercício tem como objetivo levar os arrays para uma lista-->
 
-    	<?php
+    	    <?php
 
-    	    $host = "localhost";
-            $usuario = "usuario";
-            $senha = "senha";
-            $banco = "aulaphp";
+ 
+            $host = "localhost";
+            $user = "usuario";
+            $password = "senhadousuario";
+            $bd = "aulaphp";
             $porta = 3307;
+          
+            $conexao = new PDO("mysql:host=$host;porta=$porta;dbname=$bd",$user,$password);
 
-    	    $conexao = new PDO("mysql:host=$host;porta=$porta;dbname=$banco",$usuario,$senha);
 
     	    $sql = "SELECT id,nome,nota FROM notas";
 
@@ -40,10 +42,10 @@
             $entrada6 = $resultados[1]["nota"];
 
            
-            echo "<ul><li>Id: $entrada1</li><li>Nome: $entrada2</li><li>Nota: $entrada3</li></ul>";
-            echo "<ul><li>Id: $entrada4</li><li>Nome: $entrada5</li><li>Nota: $entrada6</li></ul>";            
+               echo "<ul><li>Id: $entrada1</li><li>Nome: $entrada2</li><li>Nota: $entrada3</li></ul>";
+               echo "<ul><li>Id: $entrada4</li><li>Nome: $entrada5</li><li>Nota: $entrada6</li></ul>";            
 
-        ?> 
+            ?> 
            
 
       <p><a href="index.php">Menu</a></p> 

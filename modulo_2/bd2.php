@@ -12,15 +12,16 @@
         <!-- Este programa faz uma conexão com a tabela notas dentro do banco de dados aulaphp-->
 
 
-    	<?php
+    	    <?php
 
-    	    $host = "localhost";
-            $usuario = "usuario";
-            $senha = "senha";
-            $banco = "aulaphp";
+ 
+            $host = "localhost";
+            $user = "usuario";
+            $password = "senhadousuario";
+            $bd = "aulaphp";
             $porta = 3307;
-
-    	    $conexao = new PDO("mysql:host=$host;porta=$porta;dbname=$banco",$usuario,$senha);
+          
+            $conexao = new PDO("mysql:host=$host;porta=$porta;dbname=$bd",$user,$password);
 
     	    $sql = "SELECT id,nome,nota FROM notas";
 
@@ -28,24 +29,24 @@
     	    $consulta->execute();
     	    $resultados = $consulta->fetchall(PDO::FETCH_ASSOC);
 
-    	    print_r($resultados);
+    	      print_r($resultados);
 
-            echo"<p>------------------------------------</p>";
+              echo"<p>------------------------------------</p>";
 
-    	    echo "<BR>(print_r do resultados[0])<BR>";
-    	    print_r($resultados[0]);
-    	    echo "<BR>(print_r do resultados[1])<BR>";
-    	    print_r($resultados[1]);
-    	    echo "<BR>(print_r do resultados[2])<BR>";
-    	    print_r($resultados[2]);
-    	    echo "<BR>(print_r do resultados[3])<BR>";
-    	    print_r($resultados[3]);
-    	    echo "<br><br><br>";
+    	      echo "<BR>(print_r do resultados[0])<BR>";
+    	      print_r($resultados[0]);
+    	      echo "<BR>(print_r do resultados[1])<BR>";
+    	      print_r($resultados[1]);
+    	      echo "<BR>(print_r do resultados[2])<BR>";
+    	      print_r($resultados[2]);
+    	      echo "<BR>(print_r do resultados[3])<BR>";
+    	      print_r($resultados[3]);
+    	      echo "<br><br><br>";
 
-            echo"<p>------------------------------------</p>";
-    	    echo $resultados[0]["nome"];
+              echo"<p>------------------------------------</p>";
+    	      echo $resultados[0]["nome"];
 
-    ?>
+            ?>
 
 
         <p><a href="index.php">Menu</a></p> 

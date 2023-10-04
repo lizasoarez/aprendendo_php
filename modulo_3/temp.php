@@ -12,15 +12,13 @@
 
     	    <?php
 
-
-          $host = "localhost";
-          $user = "usuario";
-          $password = "senhadousuario";
-          $bd = "aulaphp";
+    	    $host = "localhost";
+          $usuario = "usuario";
+          $senha = "senhadousuario";
+          $banco = "aulaphp";
           $porta = 3307;
-          
-          $conexao = new PDO("mysql:host=$host;porta=$porta;dbname=$bd",$user,$password);
 
+    	    $conexao = new PDO("mysql:host=$localhost;porta=$porta;dbname=$bd",$user,$password);
 
 
     	    $sql = "SELECT id_cliente,nome,cidade,pais,telefone FROM clientes";
@@ -55,12 +53,12 @@
 
             echo "<table  bgcolor=lightgray border=1 ><tr><td>Id</td><td>Nome</td><td>Cidade</td><td>País</td><td>Telefone</td></tr>";
 
-          foreach ($resultados as $cadastro){
-          $id = $cadastro["id_cliente"];
-          $nome = $cadastro["nome"];
-          $cidade = $cadastro["cidade"];
-          $pais = $cadastro["pais"];
-          $telefone = $cadastro["telefone"];
+           foreach ($resultados as $cadastro){
+            $id = $cadastro["id_cliente"];
+            $nome = $cadastro["nome"];
+            $cidade = $cadastro["cidade"];
+            $pais = $cadastro["pais"];
+            $telefone = $cadastro["telefone"];
 
           ?>
 

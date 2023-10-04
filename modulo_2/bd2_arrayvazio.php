@@ -19,18 +19,17 @@
                Aprovado:<input name="aprovacao" size=12>
                <br/> 
                <p><button>Enviar</button></p>
-               
             
             </form>
 
-        <?php
+            <?php
 
                print_r($_GET);
 
 
-        ?>
+            ?>
 
-      <p><a href="index.php">Menu</a></p> 
+        <p><a href="index.php">Menu</a></p> 
     </body>
 
 

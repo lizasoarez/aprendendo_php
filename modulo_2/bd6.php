@@ -20,18 +20,20 @@
             
             </form> 
 
-    	<?php
+    	    <?php
 
-    	    $host = "localhost";
-          $usuario = "usuario";
-          $senha = "senha";
-          $banco = "aulaphp";
+
+          $host = "localhost";
+          $user = "usuario";
+          $password = "senhadousuario";
+          $bd = "aulaphp";
           $porta = 3307;
+          
+          $conexao = new PDO("mysql:host=$host;porta=$porta;dbname=$bd",$user,$password);
 
-    	    $conexao = new PDO("mysql:host=$localhost;porta=$porta;dbname=$bd",$user,$password);
 
 
-          if (isset($_GET["nome"])){
+            if (isset($_GET["nome"])){
 
           $nome =$_GET["nome"];
           $nota =$_GET["nota"];
@@ -42,7 +44,7 @@
           $consulta->execute();
           }          
 
-          if (isset($_GET["acao"])){
+            if (isset($_GET["acao"])){
          
           $id =$_GET["id"];                    
 
@@ -51,7 +53,7 @@
           $consulta->bindParam(":id",$id);
           $consulta->execute();         
 
-         }             
+          }             
 
           $sql = "SELECT id,nome,nota FROM notas";
           $consulta = $conexao->prepare($sql);
@@ -59,7 +61,7 @@
     	    $resultados = $consulta->fetchall(PDO::FETCH_ASSOC);
 
 
-           echo "<table  bgcolor=lightgray border=1><tr><td>Id</td><td>Nome</td><td>Nota</td><td>Ação</td></tr>";
+            echo "<table  bgcolor=lightgray border=1><tr><td>Id</td><td>Nome</td><td>Nota</td><td>Ação</td></tr>";
 
            foreach ($resultados as $cadastro){
             $id = $cadastro["id"];
@@ -78,13 +80,13 @@
            <?php
            }
 
-           echo "</table>";        
+             echo "</table>";        
 
-    	    ?>
+    	     ?>
          
-
+     <p><a href="index.php">Menu</a></p> 
     </body>
-    <p><a href="index.php">Menu</a></p> 
+    
 
 
     </html>

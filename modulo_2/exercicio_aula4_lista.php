@@ -12,13 +12,15 @@
 
     	<?php
 
-    	  $host = "localhost";
-          $usuario = "usuario";
-          $senha = "senha";
-          $banco = "aulaphp";
-          $porta = 3307;
 
-    	    $conexao = new PDO("mysql:host=$localhost;porta=$porta;dbname=$bd",$user,$password);
+          $host = "localhost";
+          $user = "usuario";
+          $password = "senhadousuario";
+          $bd = "aulaphp";
+          $porta = 3307;
+          
+          $conexao = new PDO("mysql:host=$host;porta=$porta;dbname=$bd",$user,$password);
+
 
 
     	    $sql = "SELECT id,nome,nota FROM notas"; 

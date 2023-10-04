@@ -10,15 +10,16 @@
           <h2><p>Escola Aprender++ </p></h2>
             <h3><p> Lista de Alunos</p></h3>
 
-    	<?php
+    	    <?php
 
-    	    $host = "localhost";
-          $usuario = "usuario";
-          $senha = "senha";
-          $banco = "aulaphp";
+
+          $host = "localhost";
+          $user = "usuario";
+          $password = "senhadousuario";
+          $bd = "aulaphp";
           $porta = 3307;
-
-    	    $conexao = new PDO("mysql:host=$localhost;porta=$porta;dbname=$bd",$user,$password);
+          
+          $conexao = new PDO("mysql:host=$host;porta=$porta;dbname=$bd",$user,$password);
 
 
     	    $sql = "SELECT id,nome,nota FROM notas"; 
@@ -49,12 +50,12 @@
              echo "]"; 
              echo "</li>";                         
              
-            }
+          }
 
             echo "</ul>";
 
 
-    	?>  	
+    	    ?>  	
          
 
     </body>
