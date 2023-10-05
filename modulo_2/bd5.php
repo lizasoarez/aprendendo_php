@@ -39,7 +39,7 @@
           $nome =$_GET["nome"];
           $nota =$_GET["nota"];
           $sql = "INSERT INTO notas(nome,nota) VALUES(:nome,:nota)";
-    	    $consulta = $conexao->prepare($sql);    	    
+    	  $consulta = $conexao->prepare($sql);    	    
           $consulta->bindParam(":nome",$nome);
           $consulta->bindParam(":nota",$nota);
           $consulta->execute();
@@ -49,7 +49,7 @@
           $sql = "SELECT id,nome,nota FROM notas";
           $consulta = $conexao->prepare($sql);
           $consulta->execute(); 
-    	    $resultados = $consulta->fetchall(PDO::FETCH_ASSOC);
+    	  $resultados = $consulta->fetchall(PDO::FETCH_ASSOC);
 
 
            echo "<table  bgcolor=lightgray border=1 ><tr><td>Id</td><td>Nome</td><td>Nota</td></tr>";
