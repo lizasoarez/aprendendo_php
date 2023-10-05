@@ -21,14 +21,14 @@
            m argin-right: auto;
            width: 40%;}
            
-    </style>
+        </style>
 
     <body>
 
       
-       <h2><p>Aula 7</p></h2>
-       <h2><p>Restaurante Prato Bom </p></h2>
-          <h3><p> Cadastro Clientes </p></h3>
+      <h2><p>Aula 7</p></h2>          
+          <h2><p>Restaurante Prato Bom </p></h2>
+          <h3><p> Cadastro de Clientes </p></h3>
 
 
          <form>

@@ -10,14 +10,14 @@
           <h2><p>Escola Aprender++ </p></h2>
             <h3><p> Lista de Alunos</p></h3>
 
-    	<?php
+    	    <?php
 
 
             $host = "localhost";
-          $user = "usuario";
-          $password = "senhadousuario";
-          $bd = "aulaphp";
-          $porta = 3307;
+            $user = "usuario";
+            $password = "senhadousuario";
+            $bd = "aulaphp";
+            $porta = 3307;
           
             $conexao = new PDO("mysql:host=$host;porta=$porta;dbname=$bd",$user,$password);
 

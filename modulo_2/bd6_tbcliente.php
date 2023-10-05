@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-      <meta charset = "utf-8">
-      <title>Aprendendo PHP</title>
+    	<meta charset = "utf-8">
+    	<title>Aprendendo PHP</title>
     </head>
         <style> 
            input[type="text"]{
            width: 250px;
            padding: 1px;}
-
-           input[type="submit"]{
-           display: block;
-           margin-left: auto;
-           m argin-right: auto;
-           width: 40%;}
-
-           input2[type=button]{
-           display: block;
-           margin-left: auto;
-           m argin-right: auto;
-           width: 40%;}
-           
-    </style>
+        </style>
 
     <body>
 
       
-       <h2><p>Aula 7</p></h2>
-       <h2><p>Restaurante Prato Bom </p></h2>
-          <h3><p> Cadastro Clientes </p></h3>
+      <h2><p>Aula 7</p></h2>          
+          <h2><p>Restaurante Prato Bom </p></h2>
+          <h3><p> Cadastrando Clientes </p></h3>
 
 
          <form>
@@ -54,7 +41,7 @@
           </table><br><br>
          </form>
 
-          <?php
+    	    <?php
 
 
           $host = "localhost";
@@ -88,7 +75,7 @@
           $id =$_GET["id"];                
 
           $sql = "DELETE FROM clientes WHERE id_cliente =:id";
-          $consulta = $conexao->prepare($sql);          
+    	    $consulta = $conexao->prepare($sql);    	    
           $consulta->bindParam(":id",$id);
           $consulta->execute();         
 
@@ -97,7 +84,7 @@
           $sql = "SELECT id_cliente,nome,cidade,pais,telefone FROM clientes";
           $consulta = $conexao->prepare($sql);
           $consulta->execute(); 
-          $resultados = $consulta->fetchall(PDO::FETCH_ASSOC);
+    	    $resultados = $consulta->fetchall(PDO::FETCH_ASSOC);
 
 
             echo "<table  bgcolor=lightgray border=1><tr><td>Id</td><td>Nome</td><td>cidade</td><td>País</td><td>Telefone</td><td>Ação</td></tr>";
@@ -110,14 +97,13 @@
             $telefone = $cadastro["telefone"];
             ?>
 
-
             <tr>
               <td bgcolor=white><?=$id?></td>
               <td bgcolor=white><?=$nome?></td>
               <td bgcolor=white><?=$cidade?></td>
               <td bgcolor=white><?=$pais?></td>
               <td bgcolor=white><?=$telefone?></td>
-              <td><a href=temp.php?acao=remover&id=<?=$id?>><input type="button" value="Remover"></a></td>
+              <td bgcolor=white><a href=temp.php?acao=remover&id=<?=$id?>>Remover</a></td>
               
             </tr>
 
@@ -126,7 +112,7 @@
 
              echo "</table>";        
 
-           ?>
+    	     ?>
          
      <p><a href="index.php">Menu</a></p> 
     </body>
@@ -134,7 +120,7 @@
 
 
     </html>
-      
+    	
 
 
 
