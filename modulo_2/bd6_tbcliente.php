@@ -103,7 +103,7 @@
               <td bgcolor=white><?=$cidade?></td>
               <td bgcolor=white><?=$pais?></td>
               <td bgcolor=white><?=$telefone?></td>
-              <td bgcolor=white><a href=temp.php?acao=remover&id=<?=$id?>>Remover</a></td>
+              <td bgcolor=white><a href=bd6_tbcliente.php?acao=remover&id=<?=$id?>>Remover</a></td>
               
             </tr>
 
