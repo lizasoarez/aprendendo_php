@@ -10,7 +10,9 @@
        <h3><b>Módulo 3</b></h3>
 
     <ul>
-        <li><a href="temp.php">Aula 1 </a></li>
+        
+        <li><a href="controledefluxo1.php">Aula 1 - Revisitando o forEach</a></li>
+        <li><a href="controledefluxo2.php">Aula 2 - Comando "for"</a></li>
         
     </ul>
 

@@ -78,7 +78,7 @@
             </tr>
 
             <tr>
-              <td> Maior ou iguala a 40,0 </td>
+              <td> Maior ou igual a 40 </td>
               <td> Obesidade classe III</td>
             </tr>
 

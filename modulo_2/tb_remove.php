@@ -52,7 +52,9 @@
                <td><input type="submit" value="Cadastrar"></td>
             </tr>
           </table><br><br>
-         </form>
+
+         </form >
+           
 
           <?php
 
@@ -72,7 +74,7 @@
           $cidade =$_GET["cidade"];
           $pais =$_GET["pais"];
           $telefone =$_GET["telefone"];
-
+          
           $sql = "INSERT INTO clientes(nome,cidade,pais,telefone) VALUES(:nome,:cidade,:pais,:telefone)";
 
           $consulta = $conexao->prepare($sql);          
@@ -80,7 +82,8 @@
           $consulta->bindParam(":cidade",$cidade);
           $consulta->bindParam(":pais",$pais);
           $consulta->bindParam(":telefone",$telefone);
-          $consulta->execute();
+          $consulta->execute();          
+         
           }          
 
             if (isset($_GET["acao"])){
@@ -102,13 +105,13 @@
 
             echo "<table  bgcolor=lightgray border=1><tr><td>Id</td><td>Nome</td><td>cidade</td><td>País</td><td>Telefone</td><td>Ação</td></tr>";
 
-           foreach ($resultados as $cadastro){
-            $id = $cadastro["id_cliente"];
-            $nome = $cadastro["nome"];
-            $cidade = $cadastro["cidade"];
-            $pais = $cadastro["pais"];
-            $telefone = $cadastro["telefone"];
-            ?>
+            foreach ($resultados as $cadastro){
+          $id = $cadastro["id_cliente"];
+          $nome = $cadastro["nome"];
+          $cidade = $cadastro["cidade"];
+          $pais = $cadastro["pais"];
+          $telefone = $cadastro["telefone"];
+          ?>
 
 
             <tr>
@@ -117,7 +120,7 @@
               <td bgcolor=white><?=$cidade?></td>
               <td bgcolor=white><?=$pais?></td>
               <td bgcolor=white><?=$telefone?></td>
-              <td><a href=temp.php?acao=remover&id=<?=$id?>><input type="button" value="Remover"></a></td>
+              <td><a href=tb_remove.php?acao=remover&id=<?=$id?>><input type="button" value="Remover"></a></td>
               
             </tr>
 
