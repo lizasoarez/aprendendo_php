@@ -19,7 +19,7 @@
           $bd = "aulaphp";
           $porta = 3307;
 
-          //com correção de acentos e carcteres especias foi usado o "SET NAMES utf8"
+          //Para a correção de acentos e carcteres especias foi usado o "SET NAMES utf8"
 
           $conexao = new PDO("mysql:host=$host;porta=$porta;dbname=$bd",$user,$password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
           
