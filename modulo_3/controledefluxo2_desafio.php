@@ -1,3 +1,9 @@
+<!--Autor: Lizndra Soares de Souza -->
+<!--Data: 12 de outubro de 2023 -->
+<!--Aula do curso de Lógica de Programação em PHP -->
+<!--Exercicio com uma versão que usa array_reverse -->
+
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
