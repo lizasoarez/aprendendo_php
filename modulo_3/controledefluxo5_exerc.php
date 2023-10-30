@@ -13,7 +13,7 @@
  <body>
 
     <h2><b>Módulo 3</b></h2>
-       <h3><b> Aula 4 - Comandos if dentro do for - Exercício</b></h3>
+       <h3><b> Aula 5 - Comandos if dentro do for- Exercício</b></h3>
 
                <?php
                //exibir apenas os elementos do array menos os do indice =3

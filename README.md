@@ -5,7 +5,7 @@ Olá! Eu sou a Lizandra e estou embarcando na emocionante jornada de aprendizado
 ### Sobre Mim
 - Nome: Lizandra
 - Nível de Conhecimento: Iniciante
-- Experiência em Bancos de Dados e SQL: Intermediária
+- Experiência em Bancos de Dados e SQL: básica
 
 ### Sobre o Repositório
 Este repositório contém códigos desenvolvidos por mim durante o curso. Como estou ainda no estágio inicial da minha jornada de aprendizado, é possível que os códigos contenham alguns erros. No entanto, estou comprometida em aprender e melhorar continuamente.
