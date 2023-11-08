@@ -37,8 +37,7 @@
                       echo"<p>Seu peso está acima do recomendado.Classificação Obesidade Classe I.</p>";}
               else if ($imc <= 39.9){
                       echo"<p>Seu peso está acima do recomendado.Classificação Obesidade Classe II.</p>";}
-              else if ($imc >= 40){
-                      echo"<p>Seu peso está acima do recomendado.Classificação Obesidade Classe III.</p>";}
+              else {echo"<p>Seu peso está acima do recomendado.Classificação Obesidade Classe III.</p>";}
                                       }
           ?>
 
@@ -91,7 +90,12 @@
             </tr>
 
           </table>
-     
+
+
+          
+
+      <p><a href="index.php">Menu</a></p>                         
+        
   	 </body>
      
 
