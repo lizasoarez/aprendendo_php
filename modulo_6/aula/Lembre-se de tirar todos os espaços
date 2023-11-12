@@ -1,0 +1,2 @@
+Lembre-se de tirar todos os espaços do arquivo que for possivel no arquivo de salvamento, pois o 
+PhpSpreadsheet é sensivel a espaços entre as tag de abertura e fechamento do php.

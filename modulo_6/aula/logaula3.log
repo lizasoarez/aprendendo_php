@@ -1,0 +1,5 @@
+[2023-11-09T04:04:57.004710+01:00] meu_log.WARNING: Nível WARNING - Mensagem de aviso indicando situações que precisam ser observadas. [] []
+[2023-11-09T04:04:57.009473+01:00] meu_log.ERROR: Nível ERROR - Mensagem de erro que afetou a funcionalidade do aplicativo. [] []
+[2023-11-09T04:04:57.022339+01:00] meu_log.CRITICAL: Nível CRITICAL - Mensagem de erro crítico exigindo intervenção imediata. [] []
+[2023-11-09T04:04:57.022502+01:00] meu_log.ALERT: Nível ALERT - Mensagem que requer ação imediata. [] []
+[2023-11-09T04:04:57.022616+01:00] meu_log.EMERGENCY: Nível EMERGENCY - Mensagem de emergência indicando um estado crítico que requer intervenção imediata. [] []

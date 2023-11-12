@@ -24,11 +24,10 @@
         </style>
 
     <body>
-
       
-      <h2><p>Aula 7</p></h2>          
-          <h2><p>Restaurante Prato Bom </p></h2>
-          <h3><p> Cadastro de Clientes </p></h3>
+      <p><h2>Aula 7</h2></p>          
+          <p><h2>Restaurante Prato Bom</h2></p>
+         <p><h3> Cadastro de Clientes </h3></p>
 
 
          <form>
@@ -90,14 +89,14 @@
          
           $id =$_GET["id"];                
 
-          $sql = "DELETE FROM clientes WHERE id_cliente =:id";
+          $sql = "DELETE FROM clientes WHERE id =:id";
           $consulta = $conexao->prepare($sql);          
           $consulta->bindParam(":id",$id);
           $consulta->execute();         
 
           }             
 
-          $sql = "SELECT id_cliente,nome,cidade,pais,telefone FROM clientes";
+          $sql = "SELECT id,nome,cidade,pais,telefone FROM clientes";
           $consulta = $conexao->prepare($sql);
           $consulta->execute(); 
           $resultados = $consulta->fetchall(PDO::FETCH_ASSOC);
@@ -106,7 +105,7 @@
             echo "<table  bgcolor=lightgray border=1><tr><td>Id</td><td>Nome</td><td>cidade</td><td>País</td><td>Telefone</td><td>Ação</td></tr>";
 
             foreach ($resultados as $cadastro){
-          $id = $cadastro["id_cliente"];
+          $id = $cadastro["id"];
           $nome = $cadastro["nome"];
           $cidade = $cadastro["cidade"];
           $pais = $cadastro["pais"];

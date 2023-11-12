@@ -18,11 +18,7 @@
                <br/>               
                <p><button>Cadastrar</button></p>               
             
-            </form> 
-
-
-
-            
+            </form>
 
     	    <?php
 
