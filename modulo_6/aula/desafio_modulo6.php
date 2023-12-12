@@ -198,7 +198,7 @@
 
          
 
-            foreach ($resultados as $cadastro){
+          foreach ($resultados as $cadastro){
           $id = $cadastro["id"];
           $nome = $cadastro["nome"];
           $cidade = $cadastro["cidade"];

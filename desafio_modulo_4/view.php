@@ -107,7 +107,7 @@
                             <label for="cidade">Cidade:</label>
                             <input type="text"name="cidade" value="<?=$cidade?>">
                         </div>                
-                        <div class="bloco_form">                            <label for="pais">País:</label>
+                        <div class="bloco_form"><label for="pais">País:</label>
                             <input type="text" name="pais" value="<?=$pais?>">
                         </div>                
                         <div class="bloco_form">

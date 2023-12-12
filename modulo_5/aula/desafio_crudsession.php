@@ -245,18 +245,19 @@
             $salario = recebe("salario");
             $selecao = recebe("selecao");
 
-            if ($nome != "" && $selecao != "") {
+            if ($nome != "" && $selecao != ""){
                 $pessoa = null;
                 if ($selecao == "empregado") {
                     $pessoa = new Empregado($nome, $idade, $cidade, $pais, $salario);
-                } else if ($selecao == "socio") {
+                }else if ($selecao == "socio") {
                     $pessoa = new Socio($nome, $idade, $cidade, $pais, $salario);
-                } else if ($selecao == "pJ") {
+                }else if ($selecao == "pJ") {
                     $pessoa = new PessoaJuridica($nome, $idade, $cidade, $pais, $salario);
                 }
+
                 $memoria1->salvar($pessoa);
             }
-        } else if (recebe("acao") == "exibe") {
+        }else if (recebe("acao") == "exibe"){
         }
 
         $lista = $memoria1->lerDados();
@@ -297,8 +298,7 @@
             }
         }
 
-
         ?>
-
-
 </body>
+</div>
+</html>
