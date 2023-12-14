@@ -10,13 +10,18 @@
     return isset($_GET[$param]) || isset($_POST[$param]);      
 
     }
-
-
     function testar($param,$vlr){
       if(!existe($param)) return false;
        return recebe($param) == $vlr;
     }   
- 
+ function btn($param) {    
+    if (isset($param) && ($param === "editar" || testar('acao', 'consultar'))) {
+        echo "<button type=submit name=acao value=editar>Editar</button>";
+    } else {
+        echo "<button type=submit name=acao value=cadastro>Cadastrar</button>";
+    }
+}
+
 
 
 ?>

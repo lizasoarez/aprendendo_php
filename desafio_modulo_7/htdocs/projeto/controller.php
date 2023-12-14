@@ -12,17 +12,13 @@ if (testar('acao','cadastro')){
    } else if(testar('acao','editar')){
     $model->atualizaClientes(recebe('id'),recebe('nome'),recebe('email'));
    } else if(testar('acao','consultar')){
-    $model->listarClientesId(recebe('id'));
-    
+    $model->listarClientesId(recebe('id'));   
 
-   }
+   }  
 
+    $dados = $model->listarClientes();
 
-$dados = $model->listarClientes();
-
-render("cliente.php", $dados);
-
-
+    render("cliente.php", $dados);
 }
 
     function produtos(){
@@ -51,10 +47,10 @@ render("cliente.php", $dados);
     $nome=recebe('nome');
     $email=recebe('email');
     $valor=recebe('valor');
-    $acao="cadastro";      
+    
     $arrayCadastro=$dados;
     include $template;
+       
     }
-    
 
 ?>    
